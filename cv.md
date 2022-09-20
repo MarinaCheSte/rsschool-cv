@@ -50,10 +50,10 @@ _Intercultural Business Communication_
 
 ## Languages
 
-**Russian:**Native
+**Russian:** Native
 
-**Belarusian:**Native
+**Belarusian:** Native
 
-**English:**Advanced
+**English:** Advanced
 
-**Spanish:**Pre-Intermediate
+**Spanish:** Pre-Intermediate
