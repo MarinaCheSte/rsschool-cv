@@ -18,6 +18,8 @@
 
 I have a lot of experience in the sphere of international relations - the sphere I really like, but about two years ago I was attracted by frontend development and stated gaining knowledge and improving skills in this field. I've already finished Frontend development course and have small-time working experience as a developer. My goal is to further improve my skills and become an expert in frontend development.
 
+---
+
 ## My Skills
 
 - HTML, CSS
@@ -28,7 +30,8 @@ I have a lot of experience in the sphere of international relations - the sphere
 
 ## Code Example
 
-```function multiply(a, b){
+```
+function multiply(a, b){
   return a * b
 }
 ```
@@ -47,10 +50,10 @@ _Intercultural Business Communication_
 
 ## Languages
 
-**Russian-Native**
+**Russian:**Native
 
-**Belarusian-Native**
+**Belarusian:**Native
 
-**English-Advanced**
+**English:**Advanced
 
-**Spanish-Pre-Intermediate**
+**Spanish:**Pre-Intermediate
