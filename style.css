@@ -1,3 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
 body {
-  font-family: "Courier New", Courier, monospace;
+	overflow-x: hidden;
+	width: 100%;
+	font-size: 1.6rem;
+	/*font-family: 'Dancing Script', cursive;*/
+	font-family: 'Caveat', cursive;
+	/*font-family: 'Silkscreen', cursive;*/
+	/*font-family: 'Nunito Sans', sans-serif;*/
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+html {
+	font-size: 10px;
+	overflow-x: hidden;
+}
+
+/*HEADER STYLES*/
+
+.header {
+	height: 80px;
+	width: 100%;
+	display: flex;
+	border-bottom: rgba(0, 117, 128, 0.1) solid 5px;
+
+}
+
+.wrapper {
+	width: 120rem;
+	margin: auto;
+	height: 100%;
+	display: flex;
+}
+
+.wrapper__header {
+	display: flex;
+	/*align-items: flex-end;*/
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	width: 27%;
+	justify-content: space-between;
+}
+
+.logo__circle {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #376E6F;
+	cursor: pointer;
+}
+
+.logo__circle:hover {
+	background-color: #036a6c;
+}
+
+.logo__name {
+	font-size: 2.5rem;
+}
+
+.logo__profession {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.header__navigation {
+	display: flex;
+	justify-content: flex-end;
+	width: 73%;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+}
+
+.navigation__li {
+	margin: 30px;
+	list-style-type: none;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.navigation__li:hover {
+	color: #376E6F;
+}
+
+.line {
+	border: solid black 0.1px;
+	height: 50%;
 }
