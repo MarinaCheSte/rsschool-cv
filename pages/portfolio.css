@@ -1,0 +1,25 @@
+.two-column-portfolio {
+	display: flex;
+	align-items: flex-start;
+}
+
+.portfolio-section-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolio__info {
+	width: 50%;
+	height: 300px;
+	border: solid black 2px;
+	border-radius: 10px;
+	font-size: 3rem;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio__headline {
+	margin-top: 100px;
+}

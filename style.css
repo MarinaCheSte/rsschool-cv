@@ -18,6 +18,10 @@ body {
 
 }
 
+* {
+	box-sizing: border-box;
+}
+
 html {
 	font-size: 10px;
 	overflow-x: hidden;
@@ -50,13 +54,14 @@ html {
 }
 
 .logo__circle {
-	width: 30px;
-	height: 30px;
+	display: block;
+	width: 35px;
+	height: 35px;
 	border-radius: 50%;
-	/*background-color: #376E6F;*/
-	background-color: #687864;
+	/*background-color: #687864;*/
+	background: linear-gradient(rgba(104, 120, 100, 0.7), rgb(49, 112, 142), rgb(143, 193, 227));
 	cursor: pointer;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .logo__circle:hover {
@@ -66,14 +71,14 @@ html {
 .logo__name {
 	font-size: 2.5rem;
 	margin: 0;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .logo__profession {
 	font-size: 2rem;
 	font-weight: 400;
 	margin: 0;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .header__navigation {
@@ -103,7 +108,9 @@ html {
 }
 
 .navigation__li:hover {
-	color: #376E6F;
+	color: #4f7746;
+	transform: scale(1.1);
+	transition: 0.5s;
 }
 
 .line {
@@ -150,11 +157,14 @@ html {
 }
 
 .button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
 	border: none;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	color: rgb(255, 255, 255);
 	cursor: pointer;
 }
@@ -202,4 +212,48 @@ html {
 
 .footer__li {
 	list-style-type: none;
+}
+
+a:active,
+a:hover,
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.info-section__avatar {
+	animation: visibleBlock 1.5s linear forwards;
+}
+
+.info-section__greeting-text {
+	animation: visibleBlock 0.5s linear forwards;
+}
+
+.button_primary {
+	animation: visibleBlock 1s linear forwards;
+}
+
+.button_secondary {
+	animation: visibleBlock 1.5s linear forwards;
+}
+
+.button_third {
+	animation: visibleBlock 2s linear forwards;
+}
+
+@keyframes visibleBlock {
+	0% {
+		opacity: 0;
+		transform: translate(0, 80px);
+	}
+
+	50% {
+		opacity: 0.5;
+		transform: translate(0, -20px);
+	}
+
+	100% {
+		opacity: 1;
+	}
+
 }

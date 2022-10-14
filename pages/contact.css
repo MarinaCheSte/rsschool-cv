@@ -1,0 +1,37 @@
+.two-column-contact {
+	flex-direction: column;
+	font-size: 3rem;
+	padding-top: 50px;
+	line-height: 5rem;
+}
+
+.contact__background {
+	animation: visibleBlock 0.8s linear forwards;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(104, 120, 100, 0.5);
+}
+
+.contact__smallCircle {
+	width: 30px;
+	height: 30px;
+	margin-top: -90px;
+	border-radius: 50%;
+	background-color: #EAE7DC;
+}
+
+@keyframes visibleBlock {
+	0% {
+		opacity: 0;
+		transform: translate(0, 80px);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
