@@ -1,0 +1,21 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "https://MarinaCheSte.github.io/rsschool-cv/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarinaCheSte/rsschool-cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarinaCheSte/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/MarinaCheSte/rsschool-cv#readme"
+}

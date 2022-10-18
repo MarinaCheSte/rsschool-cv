@@ -6,7 +6,7 @@
 }
 
 .contact__background {
-	animation: visibleBlock 0.8s linear forwards;
+	animation: contactBlock 0.8s linear forwards;
 	width: 500px;
 	height: 500px;
 	border-radius: 50%;
@@ -25,7 +25,7 @@
 	background-color: #EAE7DC;
 }
 
-@keyframes visibleBlock {
+@keyframes contactBlock {
 	0% {
 		opacity: 0;
 		transform: translate(0, 80px);

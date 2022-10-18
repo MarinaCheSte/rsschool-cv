@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+body {
+	overflow-x: hidden;
+	width: 100%;
+	font-size: 1.6rem;
+	/*font-family: 'Dancing Script', cursive;*/
+	font-family: 'Caveat', cursive;
+	/*font-family: 'Silkscreen', cursive;*/
+	/*font-family: 'Nunito Sans', sans-serif;*/
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #EAE7DC;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	overflow-x: hidden;
+}
+
+/*HEADER STYLES*/
+
+.header {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	/*border-bottom: rgba(0, 117, 128, 0.1) solid 5px;*/
+}
+
+.wrapper {
+	width: 120rem;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	@media(max-width:1240px){
+		padding:0 20px 0 20px;
+		}
+}
+
+.wrapper__header {
+	display: flex;
+
+	}
+
+
+.logo {
+	display: flex;
+	width: 27%;
+	justify-content: space-between;
+	@media(max-width:1240px){
+		justify-content: flex-start;
+		}
+}
+
+.logo__circle {
+	display: block;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	/*background-color: #687864;*/
+	background: linear-gradient(rgba(104, 120, 100, 0.7), rgb(49, 112, 142), rgb(143, 193, 227));
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+.logo__circle:hover {
+	background-color: #4f7746;
+}
+
+.logo__name {
+	font-size: 2.5rem;
+	margin: 0;
+	margin-top: 15px;
+	@media(max-width:1240px){
+	padding: 0 10px 0 10px;
+		}
+}
+
+.logo__profession {
+	font-size: 2rem;
+	font-weight: 400;
+	margin: 0;
+	margin-top: 15px;
+	@media(max-width:1240px){
+		display:none;
+		}
+		
+}
+
+.header__navigation {
+	display: flex;
+	justify-content: flex-end;
+	width: 73%;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	height: 100%;
+	margin: 0;
+}
+
+.navigation__li {
+	margin-right: 30px;
+	margin-left: 30px;
+	list-style-type: none;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.navigation__li_ultimate {
+	margin-right: 0;
+}
+
+.navigation__li:hover {
+	color: #4f7746;
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.line {
+	border: solid black 0.1px;
+	height: 30%;
+}
+
+/*INFO SECTION*/
+
+.two-column {
+	width: 1000px;
+	height: 650px;
+	display: flex;
+	margin: auto;
+	align-items: center;
+	@media(max-width:1240px){
+		flex-direction: column;
+		height:fit-content;
+			}
+}
+
+.info-section-wrapper {
+	margin-bottom: 50px;
+}
+
+.info-section__avatar {
+	background: url("/images/avatar2.jpg");
+	background-size: cover;
+	border-radius: 50%;
+	width: 500px;
+	height: 500px;
+}
+
+.info-section__greeting-text {
+	width: 50%;
+	margin-left: 30px;
+}
+
+.info-section__text {
+	line-height: 1;
+	font-size: 2.5rem;
+}
+
+.info-section__buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: none;
+	font-size: 2.5rem;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+.button_primary {
+	background-color: #687864;
+}
+
+.button_primary:hover {
+	background-color: #4f7746;
+}
+
+.button_secondary {
+	background-color: #31708E;
+}
+
+.button_secondary:hover {
+	background-color: #117fb2;
+}
+
+.button_third {
+	background-color: #8FC1E3;
+}
+
+.button_third:hover {
+	background-color: rgb(73, 158, 210);
+}
+
+.footer {
+	border-top: solid rgba(104, 120, 100, 0.1) 5px;
+	font-size: 2rem;
+}
+
+.footer__ul {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	padding-top: 50px;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	}
+
+.footer__li {
+	list-style-type: none;
+}
+
+a:active,
+a:hover,
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.info-section__avatar {
+	animation: visibleBlock 1.5s linear forwards;
+}
+
+.info-section__greeting-text {
+	animation: visibleBlock 0.5s linear forwards;
+}
+
+.button_primary {
+	animation: visibleBlock 1s linear forwards;
+}
+
+.button_secondary {
+	animation: visibleBlock 1.5s linear forwards;
+}
+
+.button_third {
+	animation: visibleBlock 2s linear forwards;
+}
+
+@keyframes visibleBlock {
+	0% {
+		opacity: 0;
+		transform: translate(0, 80px);
+	}
+
+	50% {
+		opacity: 0.5;
+		transform: translate(0, -20px);
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
